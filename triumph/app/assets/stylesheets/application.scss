@@ -1,0 +1,122 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+    margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+
+.image-bg-fluid-height,
+.image-bg-fixed-height {
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    box-shadow: 10px;
+}
+
+.p {
+ 	display: block;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: xx-large;	
+}
+.col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 100px;
+  padding-left: 15px;
+}
+.container {
+	width: 1200px;
+}
+.colcontainer {
+	position: relative;
+	width: 300px;
+	padding-left: 62px;
+}
+
+.colcontainer2 {
+	position: relative;
+	left: 442px;
+	width: 285px;
+	bottom: 200px;
+
+}
+
+.colcontainer3 {
+	position: relative;
+	left: 842px;
+	width: 285px;
+	bottom: 455px;
+
+}
+.imgpad {
+	padding-right: 40px;
+}
+.colhelp {
+	column-span: all;
+}
+.biocolumns {
+	position: relative;
+	left: 22px;
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3;  /* Firefox */
+    column-count: 3; 
+}
+.image-bg-fluid-height {
+	background: url('rlpanorm.jpg') no-repeat center center scroll;
+    padding: 100px 0;
+}
+
+
+.img-center {
+	margin: 0 auto;
+}
+
+section {
+    padding: 75px 0;
+}
+
+.section-heading {
+    margin: 30px 0;
+    font-size: 4em;
+}
+
+.section-lead {
+    margin: 30px 0;
+}
+
+.section-paragraph {
+    margin: 30px 0;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+@media(max-width:768px) {
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .section-heading {
+        font-size: 2em;
+    }
+}
