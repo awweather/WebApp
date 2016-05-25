@@ -1,0 +1,91 @@
+
+<!--stream icons-->
+<div class="container-body">
+	<div class="page-header">
+	<h1>News</h1>
+	</div>
+	<%= image_tag("thumbnailtet.jpg") %>
+	<%= image_tag("thumbnailtet.jpg") %>
+	<br></br>
+	<%= image_tag("thumbnailtet.jpg", :size => "500x265") %>
+
+
+</div>
+
+<!-- Streams side bar -->
+<div>
+  <div class="panel panel-default panel-align">
+  	<div style="background-color: #3366ff; color:white;"" class="panel-heading">
+  		<h1>Streams</h1>
+  	</div>
+  		<div class="panel-body">
+			<%= image_tag(@path2, :size => "50x50") %>
+				<% if @result1["stream"].inspect == "nil" %>
+			      <div class="formatstatus">
+			      <%= image_tag("offlinetext.png") %>
+			      </div>
+				<% else %>
+			     <div class="formatstatus">
+				  <%= image_tag("onlinetext.png") %>
+				  </div>				
+				 <% end %>
+		</div>			
+		<div class="panel-body"> 
+			<%= image_tag(@path3, :size => "50x50") %>	
+			<% if @result2["stream"].inspect == "nil" %>
+			      <div class="formatstatus">
+			      <%= image_tag("offlinetext.png") %>
+			      </div>
+			<% else %>
+			     <div class="formatstatus">
+				  <%= image_tag("onlinetext.png") %>
+				  </div>			
+				  <% end %>
+			</div>
+		<div class="panel-body">
+		<%= image_tag(@path, :size => "50x50") %>
+			<% if @result3["stream"].inspect == "nil" %>
+			      <div class="formatstatus">
+			      <%= image_tag("offlinetext.png") %>
+			      </div>
+			<% else %>
+			     <div class="formatstatus">
+				  <%= image_tag("onlinetext.png") %>
+				  </div>
+  			<% end %> 
+  		</div>		 
+  <!--end stream side bar-->
+
+  <!--begin side bar logic-->
+  <div class="collapse" id="DeSutter">
+  	<div class="card card-block">
+		  <% if @result1["stream"].inspect != "nil" %>
+		  	<iframe src="http://www.twitch.tv/doctordesutter/embed" height="478" width="800" frameborder="0" scrolling="no"></iframe>
+		  <%else %>
+		  <% end %>
+    </div>
+  </div>
+  
+  <div class="collapse" id="Vohlumes">
+  	<div class="card card-block">
+	  <% if @result2["stream"].inspect != "nil" %>		  
+		  <iframe src="http://www.twitch.tv/doctordesutter/embed" height="478" width="800" frameborder="0" scrolling="no"></iframe>
+	  <% else %>
+
+	  <% end %>
+  	</div>
+  </div>
+  
+  <div class="collapse" id="Adub">
+  	<div class="card card-block">
+
+	  <% if @result3["stream"].inspect != "nil" %>
+		  <iframe src="http://www.twitch.tv/adub_rl/embed" height="478" width="800" frameborder="0" scrolling="no"></iframe>
+		  <% else %>
+	  <% end %>
+  	</div>
+  </div>
+
+   <!--end collapsable button logic-->
+
+</div>

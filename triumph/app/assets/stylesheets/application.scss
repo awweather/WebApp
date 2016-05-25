@@ -14,11 +14,66 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+a {
+  display: inline-block;
+  padding: .75rem 0;
+  margin: 0;
+  width: 100%;
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+ text-decoration: none;  
+}
+
+.one:hover ~ hr {
+  margin-left: .01%;
+}
+.two:hover ~ hr {
+  margin-left: 25%;
+}
+
+ul li {
+  display: inline;
+  text-align: center;
+}
+.three:hover ~ hr {
+  margin-left: 50%;
+}
+
+.four:hover ~ hr {
+  margin-left: 75%;
+}
+
+hr {
+  height: .25rem;
+  width: 25%;
+  margin: 0px;
+  float: left;
+  clear: left;
+  background: tomato;
+  border: none;
+  transition: .3s ease-in-out;
+}
+
+
 body {
     margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+.header {
+    height:100px;
+    position: absolute;
+    background:#F0F0F0;
+    border:1px solid #CCC;
+    width:1225px;
+    margin:0px auto;
+}
 
+.header-cont {
+    width:100%;
+    top:0px;
+}
 .image-bg-fluid-height,
 .image-bg-fixed-height {
     text-align: center;
@@ -28,13 +83,24 @@ body {
     -o-background-size: cover;
     box-shadow: 10px;
 }
+.btn-color {
+    background-color: #007FFF;
+    background: url()
+}
 
-.p {
- 	display: block;
-    margin-bottom: 20px;
-    margin-left: 0;
-    margin-right: 0;
-    font-size: xx-large;	
+.panel-align {
+    position:relative;
+    float: right;
+}
+.image-resize {
+   max-width: 20px;
+   dax-height: 200px;
+}
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: blue;
+  border-color: #204d74;
 }
 .col-lg-12 {
   position: relative;
@@ -66,6 +132,11 @@ body {
 	bottom: 455px;
 
 }
+
+.container-body{
+    width: 900px;
+    float: left;
+}
 .imgpad {
 	padding-right: 40px;
 }
@@ -80,11 +151,19 @@ body {
     column-count: 3; 
 }
 .image-bg-fluid-height {
-	background: url('rlpanorm.jpg') no-repeat center center scroll;
-    padding: 100px 0;
+	background: url('rlpanorm.jpg') no-repeat center scroll;
+    padding: 100px;
+}
+.formatstatus {
+    position: relative;
+    left: 10px;
+    top: 12px;
+    float: right;
 }
 
-
+.image-footer {
+    background-color: black;
+}
 .img-center {
 	margin: 0 auto;
 }
